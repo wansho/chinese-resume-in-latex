@@ -1,0 +1,190 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage{xeCJK}
+
+\usepackage{CJKutf8}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+\begin{CJK*}{UTF8}{gbsn}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large 熊二}} & 籍贯 :  {江苏连云港}\\
+  {Github: https://github.com/wansho} & Mobile : 188-5187-6323 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {华东交通大学}{江西，南昌}
+      {信息工程学院-物联网工程;  GPA: xxx; 专业排名：第二名}{2013 -- 2017}
+  \resumeSubHeadingListEnd
+
+\section{English}
+\resumeSubHeadingListStart
+\resumeSubheading
+{CET-4：586分}{熟练阅读英文文献}
+{CET-6：439分}{全国大学生英语竞赛三等奖}
+\resumeSubHeadingListEnd
+
+\section{Honors and Awards}
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+      {大一}{}
+      {专业排名第一，信息学院“十佳学习标兵”称号，校数学竞赛二等奖}{}
+    \resumeSubheading
+      {大二}{}
+      {国家励志奖学金，省计算机作品大赛三等奖，校机器人仿真大赛一等奖}{}
+    \resumeSubheading
+      {大三}{}
+      {省计算机作品大赛一等奖，校物联网作品赛一等奖}{}
+    
+  \resumeSubHeadingListEnd
+
+
+
+%-----------EXPERIENCE-----------------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {大一}{}
+      {高等数学：100，英语：90，C 语言：90}{}
+      \resumeItemListStart
+        \resumeItem{单片机学习}
+          {加入学院 Robot 实验室并开始学习51单片机}
+        \resumeItem{智能宿舍Demo}
+          {大一暑假留校制作基于51单片机的“智能宿舍Demo”，实现了防盗、防火、远程控制、温度显示和语音播报等功能。 https://www.bilibili.com/video/BV1BE411A7CM}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {大二}{}
+      {数据结构：90，操作系统：90，xxx：xxx }{}
+      \resumeItemListStart
+        \resumeItem{Android学习}
+          {在实验室自学 Java 语言和 Android 开发}
+        \resumeItem{农林植保无人机}
+          {与实验室同学合作“农林植保无人机”项目，实现远程控制无人机喷洒农药、图像传输的功能。本人负责控制电路的 PCB 设计、控制芯片的代码和 Android 客户端的代码。https://www.bilibili.com/video/BV1Wf4y1t7oM}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {大三}{}
+      {计组：90，操作系统：90，数据库：100 }{}
+      \resumeItemListStart
+        \resumeItem{Android 手机助手}
+          {在豌豆荚上线，功能类似 360 手机管家，下载量已超过 8000}
+        \resumeItem{智能开关}
+          {制作智能联网开关，实现手机端智能遥控，获省计算机作品赛一等奖}
+        \resumeItem{导师助理}
+          {被聘为信息工程学院导师助理，辅导大一新生的专业学习}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+\section{Self Evaluation}
+  \resumeSubHeadingListStart
+    \resumeSubItem{较强的自我驱动力和抗压能力}
+      {经常在实验室和伙伴熬夜赶比赛，做项目}
+    \resumeSubItem{热爱技术，喜欢学习新技术}
+      {热爱开源，有旺盛的求知欲}
+    \resumeSubItem{较强的责任心}
+      {在学习的同时，负责实验室的管理和新同学的培训工作}
+%     \resumeSubItem{Mac Setup}
+%       {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+     \hfill
+     \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+   }
+ \resumeSubHeadingListEnd
+
+ \section{Others}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{}{已参加南航计算机学院夏令营并拿到优秀营员资格。}
+   }
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{CJK*}
+\end{document}
